@@ -2,7 +2,7 @@
 
 Descripción
 ---
-Instalación de programa muy utiles despues de la instalación de Elementary OS
+Instalación de programas muy útiles despues de la instalación de Elementary OS
 
 Sistema operativo:
 ---
