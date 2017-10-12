@@ -56,7 +56,8 @@ else
             cd && mkdir discord && cd discord && wget https://dl.discordapp.net/apps/linux/0.0.2/discord-0.0.2.deb && dpkg -i *.deb && apt install -f -y
             add-apt-repository ppa:videolan/master-daily -y && apt update && apt install vlc -y
             cd && mkdir sublime && wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add - && apt install apt-transport-https -y && echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list && apt update && apt install sublime-text -y
-            cd && mkdir steam && wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb && dpkg -i *.deb -y && apt install -f -y
+	    
+	    cd && mkdir steam && wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb && dpkg -i *.deb -y && apt install -f -y
             apt install playonlinux -y
             add-apt-repository ppa:xorg-edgers/ppa -y && apt update && apt update -y
             cd && mkdir teamspeak && cd teamspeak && wget http://dl.4players.de/ts/releases/3.1.6/TeamSpeak3-Client-linux_amd64-3.1.6.run && chmod +x TeamSpeak3-Client-linux_amd64-3.1.6.run && ./TeamSpeak3-Client-linux_amd64-3.1.6.run --quiet
