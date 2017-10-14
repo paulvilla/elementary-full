@@ -34,7 +34,7 @@ else
         sleep 3s;
 
 
-        apt install vim xterm chromium-browser git gdebi gnome-system-monitor -y #gnome-control-center
+        apt install vim xterm chromium-browser git gdebi gnome-system-monitor gnome-online-accounts -y #gnome-control-center
         apt purge maya-calendar -y
         apt autoremove -y
 
