@@ -92,7 +92,7 @@ else
 
             apt install playonlinux -y
 
-            apt update && apt upgrade -y && apt autoremove -y
+            apt update && apt upgrade -y #&& apt autoremove -y
 
             # Si te da error Steam al iniciarlo lanza estos comandos
             #rm $HOME/.local/share/Steam/ubuntu12_32/steam-runtime/i386/lib/i386-linux-gnu/libgcc_s.so.1
