@@ -35,13 +35,11 @@ else
 
 
         apt install dkms vim xterm chromium-browser git gdebi gnome-system-monitor -y
-        #apt purge maya-calendar -y
-        apt autoremove -y
 
         echo -e "${blue}Instalación de temas e iconos...${NC}";
         sleep 3s;""
 
-        apt install software-properties-common autoconf automake pkg-config libgtk-3-dev git gnome-themes-standard gtk2-engines-murrine -y
+        apt install software-properties-common autoconf automake pkg-config libgtk-3-dev gnome-themes-standard gtk2-engines-murrine -y
             cd
             git clone https://github.com/horst3180/arc-theme --depth 1 && cd arc-theme
             ./autogen.sh --prefix=/usr
@@ -92,7 +90,7 @@ else
 
             apt install playonlinux -y
 
-            apt update && apt upgrade -y #&& apt autoremove -y
+            apt update && apt upgrade -y
 
             # Si te da error Steam al iniciarlo lanza estos comandos
             #rm $HOME/.local/share/Steam/ubuntu12_32/steam-runtime/i386/lib/i386-linux-gnu/libgcc_s.so.1
