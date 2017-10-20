@@ -65,7 +65,7 @@ else
                 apt install apt-transport-https -y
                 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 
-            add-apt-repository ppa:videolan/master-daily -y && add-apt-repository ppa:obsproject/obs-studio -y # add-apt-repository ppa:xorg-edgers/ppa (Puede dar fallos si lo agragas)
+            add-apt-repository ppa:videolan/master-daily -y && add-apt-repository ppa:obsproject/obs-studio -y # add-apt-repository ppa:xorg-edgers/ppa (Advertencia: No utilizar en las versiones LTS)
                 apt update && apt update -y
                 apt install vlc sublime-text obs-studio -y
 
