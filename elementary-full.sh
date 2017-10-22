@@ -54,7 +54,7 @@ else
         echo -e "${blue}Instalación secundaria de programas...${NC}";
         sleep 3s;
 
-            apt install libreoffice gimp ffmpeg menulibre kazam -y
+            apt install libreoffice gimp menulibre kazam -y
 
             cd && mkdir wlan && cd wlan
                 wget https://launchpad.net/ubuntu/+archive/primary/+files/broadcom-sta-dkms_6.30.223.141-1_all.deb
@@ -65,11 +65,9 @@ else
                 apt install apt-transport-https -y
                 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 
-            add-apt-repository ppa:videolan/master-daily -y && add-apt-repository ppa:obsproject/obs-studio -y # add-apt-repository ppa:xorg-edgers/ppa (Advertencia: No utilizar en las versiones LTS)
+            add-apt-repository ppa:videolan/master-daily -y && add-apt-repository ppa:obsproject/obs-studio -y
                 apt update && apt update -y
-                apt install vlc sublime-text obs-studio -y
-
-            apt install kdenlive -y
+                apt install vlc sublime-text obs-studio kdenlive -y
 
         echo -e "${blue}Instalación de aplicacines para juegos...${NC}";
         sleep 3s;
