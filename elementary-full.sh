@@ -54,7 +54,7 @@ else
         echo -e "${blue}Instalación secundaria de programas...${NC}";
         sleep 3s;
 
-            apt install libreoffice gimp menulibre kazam -y
+            apt install libreoffice gimp menulibre kazam ffmpeg -y
 
             cd && mkdir wlan && cd wlan
                 wget https://launchpad.net/ubuntu/+archive/primary/+files/broadcom-sta-dkms_6.30.223.141-1_all.deb
