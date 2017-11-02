@@ -77,8 +77,9 @@ else
                 gdebi -n *.deb
 
             cd && mkdir teamspeak && cd teamspeak
-                chmod +x TeamSpeak3-Client-linux_amd64-3.1.6.run
-                ./TeamSpeak3-Client-linux_amd64-3.1.6.run --quiet
+	    	wget http://dl.4players.de/ts/releases/3.1.6/TeamSpeak3-Client-linux_amd64-3.1.6.run
+                chmod +x *.run
+                ./*.run --quiet
                 mv TeamSpeak3-Client-linux_amd64 teamspeak
                 mv teamspeak /opt/
 
