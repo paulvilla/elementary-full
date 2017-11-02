@@ -55,11 +55,7 @@ else
         sleep 3s;
 
             apt install libreoffice gimp menulibre kazam ffmpeg -y
-
-            cd && mkdir wlan && cd wlan
-                wget https://launchpad.net/ubuntu/+archive/primary/+files/broadcom-sta-dkms_6.30.223.141-1_all.deb
-                gdebi -n *.deb
-
+	    
             cd && mkdir sublime && cd sublime 
                 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
                 apt install apt-transport-https -y
